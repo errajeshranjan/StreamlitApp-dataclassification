@@ -61,9 +61,9 @@ def add_parameter_ui(clf_name):
         K = st.sidebar.slider('K', 1, 15)
         params['K'] = K
     else:
-        max_depth = st.sidebar.slider('max_depth', 2, 15)
+        max_depth = st.sidebar.slider('depth range', 2, 15)
         params['max_depth'] = max_depth
-        n_estimators = st.sidebar.slider('n_estimators', 1, 100)
+        n_estimators = st.sidebar.slider('estimators range', 1, 100)
         params['n_estimators'] = n_estimators
     return params
 
